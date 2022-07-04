@@ -1,6 +1,3 @@
-import './styles/index.scss';
-import $ from 'jquery';
-
 if (document.documentElement.clientWidth > 768) {
     $('.gohockey-news__modal-banner-share').on('click', function () {
         $(".gohockey-news__modal-banner-share-links").toggleClass("show")
@@ -51,3 +48,16 @@ if (document.documentElement.clientWidth <= 768) {
         }
     });
 }
+
+//Раскрытие и скрытие блока с новостями
+$('document').ready(function () {
+    $(".gohockey-news__btn").on("click", function () {
+        if ($(".gohockey-news__btn").text() == "Все новости") {
+            $(".gohockey-news__news-items-block").addClass("max-height")
+            $(".gohockey-news__btn").text("Свернуть")
+        } else {
+            $(".gohockey-news__news-items-block").removeClass("max-height")
+            $(".gohockey-news__btn").text("Все новости")
+        }
+    })
+})
