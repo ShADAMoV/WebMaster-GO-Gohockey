@@ -1,1216 +1,277 @@
-@import url(https://fonts.gohockeyogleapis.com/css2?family=Montserrat:wght@500&display=swap);
-
-* {
-    padding: 0;
-    margin: 0;
-    font-family: generalFont
-}
-
-body {
-    background-color: #000;
-    color: #fff;
-    overflow-x: hidden
-}
-
-pre {
-    color: #fff
-}
-
-a {
-    text-decoration: none;
-    color: #fff
-}
-
-a:hover {
-    text-decoration: none;
-    color: #fff
-}
-
-.gohockey-news {
-    width: 100%
-}
-
-.gohockey-news__info {
-    background: -webkit-gradient(linear, left top, left bottom, from(#010453), color-stop(150.84%, rgba(8, 9, 49, 0))), url(/local/templates/new_ru/img/back.png) repeat-x;
-    background: linear-gradient(180deg, #010453 0%, rgba(8, 9, 49, 0) 150.84%), url(/local/templates/new_ru/img/back.png) repeat-x;
-    background-size: cover;
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    padding: 110px 40px 70px 40px;
-    -ms-flex-pack: distribute;
-    justify-content: space-around
-}
-
-.gohockey-news__team-name {
-    width: 100%;
-    max-width: 400px;
-    margin-top: auto;
-    position: relative;
-    right: 50px
-}
-
-.gohockey-news__about {
-    max-width: 610px;
-    margin-right: 10%;
-    padding-top: 40px
-}
-
-.gohockey-news__about-title {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    font-style: normal;
-    font-weight: 800;
-    font-size: 60px;
-    line-height: 65px;
-    letter-spacing: .02em;
-    color: #fff;
-    margin-bottom: 20px
-}
-
-.gohockey-news__about-title p:first-child {
-    display: contents
-}
-
-.gohockey-news__about-title p:nth-child(2) {
-    display: none
-}
-
-.gohockey-news__about-title span {
-    position: relative;
-    color: #ff4c01;
-    -webkit-text-stroke: .16em #ff4c01;
-    -webkit-text-stroke-width: 10px;
-    font-size: 60px;
-    font-weight: 800
-}
-
-.gohockey-news__about-title span::before {
-    content: attr(data-text);
-    position: absolute;
-    -webkit-text-stroke: .02em #ff4c01;
-    -webkit-text-stroke-width: 0px;
-    z-index: 2
-}
-
-.gohockey-news__about-title span::after {
-    content: attr(data-text);
-    position: absolute;
-    -webkit-text-stroke: .02em #020553;
-    -webkit-text-stroke-width: 4px;
-    right: 0;
-    z-index: 1
-}
-
-.gohockey-news__about-txt {
-    font-family: "Montserrat";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 20px;
-    letter-spacing: .02em;
-    color: rgba(255, 255, 255, .6);
-    margin-bottom: 30px
-}
-
-.gohockey-news__progress {
-    min-width: 320px;
-    width: 100%;
-    max-width: 515px;
-    padding-left: 10px
-}
-
-.gohockey-news__progress-background {
-    background: url(/local/templates/new_ru/img/bull_orang.png) no-repeat;
-    background-size: 278px;
-    height: 278px;
-    width: 100%;
-    background-position-x: center
-}
-
-.gohockey-news__progress-stats {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between
-}
-
-.gohockey-news__progress-title {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 25px;
-    text-align: center;
-    text-transform: uppercase;
-    color: #fff;
-    margin-bottom: 20px
-}
-
-.gohockey-news__progress-victories {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center
-}
-
-.gohockey-news__progress-victories span {
-    position: relative;
-    color: #000;
-    -webkit-text-stroke: .16em #000;
-    -webkit-text-stroke-width: 24px;
-    font-size: 46px;
-    line-height: 42px;
-    font-weight: 800
-}
-
-.gohockey-news__progress-victories span::before {
-    content: attr(data-text);
-    position: absolute;
-    -webkit-text-stroke: .02em #000;
-    -webkit-text-stroke-width: 2px;
-    z-index: 2
-}
-
-.gohockey-news__progress-victories span::after {
-    content: attr(data-text);
-    position: absolute;
-    -webkit-text-stroke: .02em #fff;
-    -webkit-text-stroke-width: 10px;
-    right: 0;
-    z-index: 1
-}
-
-.gohockey-news__progress-points {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center
-}
-
-.gohockey-news__progress-points span {
-    position: relative;
-    color: #000;
-    -webkit-text-stroke: .16em #000;
-    -webkit-text-stroke-width: 24px;
-    font-size: 46px;
-    line-height: 42px;
-    font-weight: 800
-}
-
-.gohockey-news__progress-points span::before {
-    content: attr(data-text);
-    position: absolute;
-    -webkit-text-stroke: .02em #000;
-    -webkit-text-stroke-width: 2px;
-    z-index: 2
-}
-
-.gohockey-news__progress-points span::after {
-    content: attr(data-text);
-    position: absolute;
-    -webkit-text-stroke: .02em #fff;
-    -webkit-text-stroke-width: 10px;
-    right: 0;
-    z-index: 1
-}
-
-.gohockey-news__progress-place {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center
-}
-
-.gohockey-news__progress-place span {
-    position: relative;
-    color: #000;
-    -webkit-text-stroke: .16em #000;
-    -webkit-text-stroke-width: 24px;
-    font-size: 46px;
-    line-height: 42px;
-    font-weight: 800
-}
-
-.gohockey-news__progress-place span::before {
-    content: attr(data-text);
-    position: absolute;
-    -webkit-text-stroke: .02em #000;
-    -webkit-text-stroke-width: 2px;
-    z-index: 2
-}
-
-.gohockey-news__progress-place span::after {
-    content: attr(data-text);
-    position: absolute;
-    -webkit-text-stroke: .02em #fff;
-    -webkit-text-stroke-width: 10px;
-    right: 0;
-    z-index: 1
-}
-
-.results {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    max-width: 595px;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between
-}
-
-.results__title {
-    display: none
-}
-
-.results__block {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    width: 50%
-}
-
-.results__image {
-    margin-right: 15px;
-    height: 34px;
-    padding-top: 5px
-}
-
-.results__image img {
-    height: 100%
-}
-
-.results__txt {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 20px;
-    letter-spacing: .02em;
-    color: #fff
-}
-
-.results__place {
-    line-height: 22px;
-    font-weight: 600
-}
-
-.gohockey-news__info-nav {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    width: 100%;
-    margin-top: -5px
-}
-
-.gohockey-news__nav-item {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    height: 80px;
-    background: #141414;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 28px;
-    text-align: center;
-    letter-spacing: .02em;
-    text-transform: uppercase;
-    color: rgba(255, 255, 255, .6);
-    border-right: 1px solid #000;
-    width: 66.3333333333%;
-    cursor: pointer;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none
-}
-
-.gohockey-news__nav-item:nth-child(3) {
-    border-bottom: 4px solid #ff4c01;
-    color: #fff;
-    height: 76px;
-    font-weight: 600
-}
-
-.gohockey-news__nav-item p:nth-child(2) {
-    display: none
-}
-
-.gohockey-news__nav-item:last-child {
-    border-right: none
-}
-
-.gohockey-news__content {
-    max-width: 1360px;
-    margin: 0 auto;
-    padding: 80px 40px 0px 40px
-}
-
-.gohockey-news__news-items {
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap
-}
-
-.gohockey-news__item {
-    position: relative;
-    width: 440px;
-    margin-bottom: 20px;
-    margin-right: 20px;
-    cursor: pointer
-}
-
-.gohockey-news__item img {
-    width: 100%
-}
-
-.gohockey-news__hush {
-    background-color: #ff4c01;
-    position: absolute;
-    left: 29px;
-    top: 26px;
-    padding: 6px 10px;
-    color: #000
-}
-
-.gohockey-news__text {
-    position: absolute;
-    left: 24px;
-    bottom: 24px;
-    font-size: 20px;
-    line-height: 25px
-}
-
-.gohockey-news__text span {
-    font-size: 16px;
-    line-height: 20px;
-    color: rgba(255, 255, 255, .6)
-}
-
-.gohockey-news__btn-block {
-    width: 100%;
-    margin-top: 12px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center
-}
-
-.gohockey-news__btn {
-    width: 278px;
-    height: 48px;
-    padding-bottom: 2px;
-    background-color: #ff4c01;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    cursor: pointer
-}
-
-.gohockey-news__news-items {
-    max-width: 1360px
-}
-
-.championship-course {
-    max-width: 1360px
-}
-
-.championship-course__content {
-    padding: 80px 40px;
-    max-width: 1360px;
-    margin: 0 auto
-}
-
-.championship-course__top {
-    margin-bottom: 40px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between
-}
-
-.championship-course__title {
-    font-size: 42px;
-    line-height: 52px;
-    letter-spacing: .02em;
-    font-weight: 600
-}
-
-.championship-course__stage {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    font-weight: 400;
-    font-size: 28px;
-    line-height: 39px;
-    letter-spacing: .02em;
-    color: rgba(255, 255, 255, .4)
-}
-
-.championship-course__select-block {
-    background: #141414
-}
-
-.championship-course__period {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    border: #141414;
-    width: 192px;
-    height: 60px;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 22px;
-    letter-spacing: .02em;
-    text-transform: uppercase;
-    color: #fff;
-    padding: 0 20px;
-    outline: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    background: url(/local/templates/new_ru/img/dropedArrow.png) no-repeat;
-    background-position-x: calc(100% - 15px);
-    background-position-y: center;
-    -moz-user-select: none;
-    -webkit-user-select: none;
-    -ms-user-select: none;
-    user-select: none
-}
-
-.championship-course__period option {
-    background: #141414
-}
-
-.social-content-block {
-    margin-top: 84px;
-    max-width: 1360px
-}
-
-.social-content-block__title-block {
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    height: 62px;
-    margin-bottom: 40px;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center
-}
-
-.social-content-block__title {
-    font-size: 42px;
-    line-height: 52px;
-    letter-spacing: .02em;
-    font-weight: 600
-}
-
-.social-content-block__content {
-    max-width: 1360px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap
-}
-
-.social-content-block__item {
-    width: 25%;
-    cursor: pointer
-}
-
-.social-content-block__item img {
-    width: 100%
-}
-
-.gohockey-news__modal-window {
-    position: fixed;
-    display: none;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    width: 100vw;
-    height: 100vh;
-    z-index: 2;
-    background: rgba(0, 0, 0, .8);
-    left: 0;
-    top: 0;
-    -ms-flex-line-pack: center;
-    align-content: center
-}
-
-.gohockey-news__modal-close-block {
-    width: 100%;
-    height: 26px;
-    position: relative;
-    margin-bottom: 10px
-}
-
-.gohockey-news__modal-close-button {
-    position: absolute;
-    right: 50px;
-    cursor: pointer;
-    width: 26px;
-    height: 26px
-}
-
-.gohockey-news__modal-close-button img {
-    width: 100%
-}
-
-.gohockey-news__modal-block {
-    width: 65%;
-    height: 75%;
-    background: #141414;
-    padding: 40px 20px 40px 40px
-}
-
-.gohockey-news__modal {
-    height: 100%;
-    overflow-y: scroll;
-    padding-right: 20px
-}
-
-.gohockey-news__modal-banner {
-    width: 100%;
-    height: 400px;
-    margin-bottom: 40px;
-    background: url(/local/templates/new_ru/img/team-news-item1.png) no-repeat center;
-    background-size: cover;
-    position: relative;
-    padding-bottom: 40px
-}
-
-.gohockey-news__modal-banner img {
-    width: 100%
-}
-
-.gohockey-news__modal-banner-share {
-    background: #232323;
-    width: 40px;
-    height: 40px;
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    border: none;
-    cursor: pointer
-}
-
-.gohockey-news__modal-banner-share img {
-    width: 100%
-}
-
-.gohockey-news__modal-banner-share-img {
-    width: 20px;
-    height: 18px;
-    position: relative
-}
-
-.gohockey-news__modal-banner-share-links {
-    width: 40px;
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
-    overflow: hidden;
-    position: absolute;
-    top: 41px;
-    display: none
-}
-
-.gohockey-news__modal-banner-share-link {
-    background: #232323;
-    width: 40px;
-    height: 40px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    margin-bottom: 1px
-}
-
-.gohockey-news__modal-banner-txt-block {
-    max-width: -webkit-fit-content;
-    max-width: -moz-fit-content;
-    max-width: fit-content;
-    height: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-line-pack: end;
-    align-content: flex-end;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    padding: 0 10px 0px 40px
-}
-
-.gohockey-news__modal-banner-title {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 32px;
-    line-height: 42px;
-    letter-spacing: .02em;
-    color: #fff;
-    margin-bottom: 10px;
-    width: 100%
-}
-
-.gohockey-news__modal-banner-txt {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    width: 100%
-}
-
-.gohockey-news__modal-banner-date {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 25px;
-    letter-spacing: .02em;
-    color: rgba(255, 255, 255, .6);
-    margin-right: 15px
-}
-
-.gohockey-news__modal-banner-hash {
-    background-color: #ff4c01;
-    padding: 6px 10px;
-    color: #000;
-    font-size: 16px;
-    line-height: 20px
-}
-
-.gohockey-news__modal-txt {
-    font-family: "Montserrat";
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
-    letter-spacing: .02em;
-    color: rgba(255, 255, 255, .8);
-    margin-bottom: 20px;
-    max-width: 730px
-}
-
-.gohockey-news__modal-image-block {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    width: 100%;
-    height: 400px;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    margin-bottom: 20px
-}
-
-.gohockey-news__modal-image {
-    width: calc(50% - 10px);
-    height: 400px
-}
-
-.gohockey-news__modal-image img {
-    width: 100%;
-    height: 100%
-}
-
-.gohockey-news__modal-image:nth-child(2n) {
-    margin-left: 20px
-}
-
-.flex {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex
-}
-
-.overflow-no {
-    overflow: hidden
-}
-
-.show {
-    display: block
-}
-
-.invisible {
-    display: none
-}
-
-@media(min-width: 1439px) {
-    .gohockey-news__item:nth-child(3n) {
-        margin-right: 0px
-    }
-}
-
-@media(max-width: 1439px) {
-    .gohockey-news__item:nth-child(2n) {
-        margin-right: 0px
-    }
-
-    .gohockey-news__item {
-        width: calc(50% - 10px)
-    }
-}
-
-@media(max-width: 1139px) {
-    .gohockey-news__about-title {
-        -ms-flex-wrap: wrap;
-        flex-wrap: wrap
-    }
-
-    .gohockey-news__info {
-        padding-bottom: 55px
-    }
-
-    .gohockey-news__team-name {
-        right: 0
-    }
-}
-
-@media(max-width: 1049px) {
-    .results__block {
-        width: 100%
-    }
-
-    .results__block:not(:last-child) {
-        margin-bottom: 15px
-    }
-}
-
-@media(max-width: 1000px) {
-    .gohockey-news__news-items {
-        max-width: 710px;
-        margin: 0 auto
-    }
-
-    .social-content-block__item {
-        width: 50%
-    }
-
-    .gohockey-news__news-items {
-        max-width: 920px;
-        margin: 0 auto
-    }
-
-    .gohockey-news__item {
-        margin-right: 0px;
-        width: 100%
-    }
-
-    .gohockey-news__text {
-        font-size: 28px;
-        line-height: 39.2px;
-        bottom: 10%
-    }
-
-    .gohockey-news__text span {
-        font-size: 24px;
-        line-height: 35.2px
-    }
-
-    .gohockey-news__hush {
-        font-size: 28px;
-        line-height: 39.2px
-    }
-
-    .championship-course__title {
-        width: 100%;
-        font-size: 28px;
-        line-height: 39.2px;
-        margin-bottom: 20px
-    }
-
-    .social-content-block__title {
-        font-size: 28px;
-        line-height: 39.2px;
-        height: 35px
-    }
-}
-
-@media(max-width: 940px) {
-    .gohockey-news__about {
-        margin-right: 2%
-    }
-
-    .gohockey-news__info {
-        padding-left: 20px;
-        padding-right: 20px
-    }
-
-    .gohockey-news__modal-banner-title {
-        font-size: 20px;
-        line-height: 25px
-    }
-
-    .gohockey-news__modal-banner-date {
-        font-size: 16px;
-        line-height: 20px
-    }
-
-    .gohockey-news__modal-banner-hash {
-        position: absolute;
-        top: 15px
-    }
-
-    .gohockey-news__modal-image {
-        width: 100%;
-        margin: 0 !important
-    }
-
-    .gohockey-news__modal-image:not(:last-child) {
-        margin-bottom: 5px !important
-    }
-
-    .gohockey-news__modal-banner-share,
-    .gohockey-news__modal-banner-share-link {
-        width: 32px;
-        height: 32px
-    }
-
-    .gohockey-news__modal-banner-share-links {
-        width: 32px;
-        top: 33px
-    }
-
-    .gohockey-news__modal-image-block {
-        height: -webkit-fit-content;
-        height: -moz-fit-content;
-        height: fit-content
-    }
-}
-
-@media(max-width: 800px) {
-    .gohockey-news__about-title {
-        min-width: 0
-    }
-
-    .gohockey-news-go {
-        padding-top: 30px
-    }
-
-    .gohockey-news__progress {
-        display: none;
-        padding-left: 0;
-        margin-bottom: 30px
-    }
-
-    .gohockey-news__progress-stats {
-        width: 100%
-    }
-
-    .gohockey-news__info {
-        padding-top: 0;
-        padding-bottom: 20px
-    }
-
-    .invisible {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex
-    }
-
-    .gohockey-news__about {
-        margin-right: 0;
-        max-width: 510px
-    }
-
-    .gohockey-news__nav-item {
-        font-size: 16px;
-        line-height: 22px
-    }
-
-    .gohockey-news__nav-item p:nth-child(1) {
-        display: none
-    }
-
-    .gohockey-news__nav-item p:nth-child(2) {
-        display: block
-    }
-}
-
-@media(min-width: 769px) {
-    .gohockey-news__modal::-webkit-scrollbar {
-        width: 5px;
-        background-color: #000
-    }
-
-    .gohockey-news__modal::-webkit-scrollbar-thumb {
-        background-color: #414141
-    }
-}
-
-@media(max-width: 768px) {
-    .gohockey-news__news-items {
-        max-width: 700px;
-        margin: 0 auto
-    }
-
-    .social-content-block__item {
-        width: 50%
-    }
-
-    .championship-course__top {
-        -ms-flex-wrap: wrap;
-        flex-wrap: wrap
-    }
-
-    .championship-course__select-block {
-        width: 335px;
-        margin-right: 0px
-    }
-
-    .championship-course__period {
-        width: 100%
-    }
-
-    .gohockey-news__text {
-        font-size: 20px;
-        line-height: 25px
-    }
-
-    .gohockey-news__hush {
-        font-size: 20px;
-        line-height: 25px
-    }
-
-    .gohockey-news__content {
-        padding: 40px 20px 0px 20px
-    }
-
-    .gohockey-news__modal {
-        padding: 0
-    }
-
-    .gohockey-news__modal-banner-txt-block {
-        padding-left: 15px
-    }
-
-    .gohockey-news__modal-block {
-        width: 100%;
-        padding: 20px;
-        background: #232323;
-        height: 85%
-    }
-
-    .gohockey-news__modal-close-button {
-        right: 20px
-    }
-
-    .gohockey-news__modal-block {
-        padding: 20px 0 20px 0
-    }
-
-    .gohockey-news__modal-content {
-        padding: 0 20px 0 20px
-    }
-}
-
-@media(max-width: 550px) {
-    .gohockey-news__text {
-        font-size: 20px;
-        line-height: 25px
-    }
-
-    .gohockey-news__text span {
-        font-size: 16px;
-        line-height: 20px
-    }
-
-    .gohockey-news__hush {
-        font-size: 16px;
-        line-height: 20px
-    }
-}
-
-@media(max-width: 500px) {
-    .results {
-        -ms-flex-wrap: wrap;
-        flex-wrap: wrap
-    }
-
-    .gohockey-news__nav-item p:nth-child(1) {
-        display: none
-    }
-
-    .gohockey-news__nav-item p:nth-child(2) {
-        display: block
-    }
-
-    .gohockey-news__about {
-        max-width: 340px
-    }
-
-    .gohockey-news__team-name {
-        max-width: -webkit-fit-content;
-        max-width: -moz-fit-content;
-        max-width: fit-content
-    }
-
-    .gohockey-news__about {
-        max-width: 340px
-    }
-
-    .gohockey-news__about-txt {
-        margin-bottom: 20px
-    }
-
-    .gohockey-news__about-title {
-        height: 24px;
-        font-size: 0;
-        line-height: 0;
-        margin-bottom: 12px
-    }
-
-    .gohockey-news__about-title p:first-child {
-        display: none
-    }
-
-    .gohockey-news__about-title p:nth-child(2) {
-        display: contents;
-        font-size: 20px;
-        line-height: 25px
-    }
-
-    .gohockey-news__about-title span,
-    .gohockey-news__about-title span::before,
-    .gohockey-news__about-title span::after {
-        font-size: 20px;
-        line-height: 28px
-    }
-
-    .gohockey-news__about-title span::before,
-    .gohockey-news__about-title span::after {
-        top: 0
-    }
-
-    .gohockey-news__about-title span {
-        -webkit-text-stroke-width: 7px;
-        margin-left: 10px
-    }
-
-    .gohockey-news__progress {
-        margin-bottom: 0
-    }
-
-    .gohockey-news__progress-title {
-        font-size: 12px;
-        line-height: 17px
-    }
-
-    .gohockey-news__progress-stats {
-        -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-        justify-content: space-between;
-        width: 335px;
-        margin-bottom: 20px
-    }
-
-    .gohockey-news__progress-stats span,
-    .gohockey-news__progress-stats span::before,
-    .gohockey-news__progress-stats span::after {
-        font-size: 24px;
-        line-height: 32px
-    }
-
-    .gohockey-news__progress-stats span {
-        -webkit-text-stroke-width: 12px
-    }
-
-    .gohockey-news__progress-stats span::after {
-        -webkit-text-stroke-width: 5px
-    }
-
-    .gohockey-news__news-items__item {
-        min-width: 310px
-    }
-}
-
-@media(max-width: 450px) {
-    .team-news__btn {
-        width: 100%
-    }
-}
-
-@font-face {
-    font-family: generalFont;
-    src: url(assets/cea1e8e8a45b9be98eac.ttf) format("truetype")
-}
-
-@font-face {
-    font-family: boldGeneralFont;
-    src: url(assets/0139c8dd0c2e0ebbba4b.ttf) format("truetype")
-}
-
-/*# sourceMappingURL=main.6155c9616f56a3510501.css.map*/
+    <div class="go-news">
+        <div class="go-news__info">
+            <div class="go-news__about">
+                <div class="go-news__about-title">
+                    <p>Хоккейная команда</p>
+                    <p>Команда</p>
+                    <div class="go-news__team-name"><span data-text="Gohockey" id="Gohockey">Gohockey</span></div>
+                </div>
+                <div class="go-news__about-txt">Несколько лет назад мы решили популяризировать любительский хоккей и
+                    создать престижный дивизион с шикарным трофее</div>
+                <div class="go-news__progress invisible">
+                    <div class="go-news__progress-stats">
+                        <div class="go-news__progress-victories">
+                            <div class="go-news__progress-title">Побед</div><span data-text="13"
+                                id="victories-count">13</span>
+                        </div>
+                        <div class="go-news__progress-points">
+                            <div class="go-news__progress-title">Очков</div><span data-text="7"
+                                id="points-count">7</span>
+                        </div>
+                        <div class="go-news__progress-place">
+                            <div class="go-news__progress-title">Место</div><span data-text="4" id="place">4</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="results">
+                    <div class="results__title">Достижения</div>
+                    <div class="results__block">
+                        <div class="results__image"><img src="/local/templates/new_ru/img/cupOrange.png" alt="resultImage"></div>
+                        <div class="results__txt">
+                            <div class="results__competitions">Чемпионат ЛЕТО-2021</div>
+                            <div class="results__place">1 место</div>
+                        </div>
+                    </div>
+                    <div class="results__block">
+                        <div class="results__image"><img src="/local/templates/new_ru/img/cupOrange.png" alt="resultImage"></div>
+                        <div class="results__txt">
+                            <div class="results__competitions">Чемпионат ЛЕТО-2021</div>
+                            <div class="results__place">1 место</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="go-news__progress">
+                <div class="go-news__progress-background" id="team-background-logo"></div>
+                <div class="go-news__progress-stats">
+                    <div class="go-news__progress-victories">
+                        <div class="go-news__progress-title">Побед</div><span data-text="13"
+                            id="victories-count">13</span>
+                    </div>
+                    <div class="go-news__progress-points">
+                        <div class="go-news__progress-title">Очков</div><span data-text="7" id="points-count">7</span>
+                    </div>
+                    <div class="go-news__progress-place">
+                        <div class="go-news__progress-title">Место</div><span data-text="4" id="place">4</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="go-news__info-nav">
+            <div class="go-news__nav-item">
+                <p>Состав команды</p>
+                <p>Состав</p>
+            </div>
+            <div class="go-news__nav-item">Турниры</div>
+            <div class="go-news__nav-item">Новости</div>
+        </div>
+        <div class="go-news__content">
+            <div class="championship-course">
+                <div class="championship-course__top">
+                    <div class="championship-course__title">Новости команды</div>
+                    <div class="championship-course__select-block"><select class="championship-course__period">
+                            <option>ВСЕ РУБРИКИ</option>
+                            <option>ВСЕ РУБРИКИ</option>
+                        </select></div>
+                </div>
+            </div>
+            <div class="go-news__news-items">
+                <div class="go-news__news-items-block">
+                    <div class="go-news__item" modal-index="1"><img src="/local/templates/new_ru/img/team-news-item1.png"
+                            alt="team-news-item">
+                        <p class="go-news__hush">#GO</p>
+                        <p class="go-news__text">Гол команды Go ` 14<br><span>10 марта 2022</span></p>
+                    </div>
+                    <div class="go-news__item" modal-index="2"><img src="/local/templates/new_ru/img/team-news-item1.png"
+                            alt="team-news-item">
+                        <p class="go-news__hush">#GO</p>
+                        <p class="go-news__text">Гол команды Go ` 14<br><span>10 марта 2022</span></p>
+                    </div>
+                    <div class="go-news__item" modal-index="3"><img src="/local/templates/new_ru/img/team-news-item1.png"
+                            alt="team-news-item">
+                        <p class="go-news__hush">#GO</p>
+                        <p class="go-news__text">Гол команды Go ` 14<br><span>10 марта 2022</span></p>
+                    </div>
+                    <div class="go-news__item" modal-index="4"><img src="/local/templates/new_ru/img/team-news-item1.png"
+                            alt="team-news-item">
+                        <p class="go-news__hush">#GO</p>
+                        <p class="go-news__text">Гол команды Go ` 14<br><span>10 марта 2022</span></p>
+                    </div>
+                    <div class="go-news__item" modal-index="5"><img src="/local/templates/new_ru/img/team-news-item1.png"
+                            alt="team-news-item">
+                        <p class="go-news__hush">#GO</p>
+                        <p class="go-news__text">Гол команды Go ` 14<br><span>10 марта 2022</span></p>
+                    </div>
+                    <div class="go-news__item" modal-index="6"><img src="/local/templates/new_ru/img/team-news-item1.png"
+                            alt="team-news-item">
+                        <p class="go-news__hush">#GO</p>
+                        <p class="go-news__text">Гол команды Go ` 14<br><span>10 марта 2022</span></p>
+                    </div>
+                    <div class="go-news__item" modal-index="4"><img src="/local/templates/new_ru/img/team-news-item1.png"
+                            alt="team-news-item">
+                        <p class="go-news__hush">#GO</p>
+                        <p class="go-news__text">Гол команды Go ` 14<br><span>10 марта 2022</span></p>
+                    </div>
+                    <div class="go-news__item" modal-index="5"><img src="/local/templates/new_ru/img/team-news-item1.png"
+                            alt="team-news-item">
+                        <p class="go-news__hush">#GO</p>
+                        <p class="go-news__text">Гол команды Go ` 14<br><span>10 марта 2022</span></p>
+                    </div>
+                    <div class="go-news__item" modal-index="6"><img src="/local/templates/new_ru/img/team-news-item1.png"
+                            alt="team-news-item">
+                        <p class="go-news__hush">#GO</p>
+                        <p class="go-news__text">Гол команды Go ` 14<br><span>10 марта 2022</span></p>
+                    </div>
+                </div>
+                <div class="go-news__modal-window" id="modal1">
+                    <div class="go-news__modal-close-block">
+                        <div class="go-news__modal-close-button"><img src="/local/templates/new_ru/img/close.png" alt="close">
+                        </div>
+                    </div>
+                    <div class="go-news__modal-block">
+                        <div class="go-news__modal">
+                            <div class="go-news__modal-banner"><button class="go-news__modal-banner-share">
+                                    <div class="go-news__modal-banner-share-img"><img
+                                            src="/local/templates/new_ru/img/share.png" alt="share"></div>
+                                    <div class="go-news__modal-banner-share-links"><a
+                                            class="go-news__modal-banner-share-link" href="">
+                                            <div class="go-news__modal-banner-share-img"><img
+                                                    src="assets/61d6798e3f98f945585b.png" alt="vk"></div>
+                                        </a><a class="go-news__modal-banner-share-link" href="">
+                                            <div class="go-news__modal-banner-share-img"><img
+                                                    src="/local/templates/new_ru/img/tik-tok.png" alt="tik-tok"></div>
+                                        </a><a class="go-news__modal-banner-share-link" href="">
+                                            <div class="go-news__modal-banner-share-img"><img
+                                                    src="assets/a1398280bc6b8a6a991a.png" alt="instagram"></div>
+                                        </a><a class="go-news__modal-banner-share-link" href="">
+                                            <div class="go-news__modal-banner-share-img"><img
+                                                    src="/local/templates/new_ru/img/telegram.png" alt="telegram"></div>
+                                        </a></div>
+                                </button>
+                                <div class="go-news__modal-banner-txt-block">
+                                    <div class="go-news__modal-banner-title">Победа в финале чемпионата</div>
+                                    <div class="go-news__modal-banner-txt">
+                                        <div class="go-news__modal-banner-date">10 марта 2022</div>
+                                        <div class="go-news__modal-banner-hash">#GO</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="go-news__modal-content">
+                                <div class="go-news__modal-txt">Несколько лет назад мы решили популяризировать
+                                    любительский хоккей и создать престижный дивизион с шикарным трофее и еще какой-то
+                                    тут текст который по сути ничего не значит, но делает некий вид этому прекрасному
+                                    блоку</div>
+                                <div class="go-news__modal-txt">Несколько лет назад мы решили популяризировать
+                                    любительский хоккей и создать престижный дивизион с шикарным трофее и еще какой-то
+                                    тут текст который по сути ничего не значит, но делает некий вид этому прекрасному
+                                    блоку</div>
+                                <div class="go-news__modal-image-block">
+                                    <div class="go-news__modal-image"><img src="/local/templates/new_ru/img/soc-item1.png"
+                                            alt="team-news-item"></div>
+                                    <div class="go-news__modal-image"><img src="/local/templates/new_ru/img/team-news-item1.png"
+                                            alt="team-news-item"></div>
+                                </div>
+                                <div class="go-news__modal-txt">Несколько лет назад мы решили популяризировать
+                                    любительский хоккей и создать престижный дивизион с шикарным трофее и еще какой-то
+                                    тут текст который по сути ничего не значит, но делает некий вид этому прекрасному
+                                    блоку</div>
+                                <div class="go-news__modal-txt">Несколько лет назад мы решили популяризировать
+                                    любительский хоккей и создать престижный дивизион с шикарным трофее и еще какой-то
+                                    тут текст который по сути ничего не значит, но делает некий вид этому прекрасному
+                                    блоку</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="go-news__modal-window" id="modal2">
+                    <div class="go-news__modal-close-block">
+                        <div class="go-news__modal-close-button"><img src="/local/templates/new_ru/img/.png" alt="close">
+                        </div>
+                    </div>
+                    <div class="go-news__modal-block">
+                        <div class="go-news__modal">
+                            <div class="go-news__modal-banner"><button class="go-news__modal-banner-share">
+                                    <div class="go-news__modal-banner-share-img"><img
+                                            src="assets/b2df9ada219246d3bbee.png" alt="share"></div>
+                                    <div class="go-news__modal-banner-share-links"><a
+                                            class="go-news__modal-banner-share-link" href="">
+                                            <div class="go-news__modal-banner-share-img"><img
+                                                    src="/local/templates/new_ru/img/vk.png" alt="vk"></div>
+                                        </a><a class="go-news__modal-banner-share-link" href="">
+                                            <div class="go-news__modal-banner-share-img"><img
+                                                    src="/local/templates/new_ru/img/tik-tok.png" alt="tik-tok"></div>
+                                        </a><a class="go-news__modal-banner-share-link" href="">
+                                            <div class="go-news__modal-banner-share-img"><img
+                                                    src="/local/templates/new_ru/img/instagram.png" alt="instagram"></div>
+                                        </a><a class="go-news__modal-banner-share-link" href="">
+                                            <div class="go-news__modal-banner-share-img"><img
+                                                    src="/local/templates/new_ru/img/telegram.png" alt="telegram"></div>
+                                        </a></div>
+                                </button>
+                                <div class="go-news__modal-banner-txt-block">
+                                    <div class="go-news__modal-banner-title">Победа в финале чемпионата</div>
+                                    <div class="go-news__modal-banner-txt">
+                                        <div class="go-news__modal-banner-date">10 марта 2022</div>
+                                        <div class="go-news__modal-banner-hash">#GO</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="go-news__modal-content">
+                                <div class="go-news__modal-txt">Несколько лет назад мы решили популяризировать
+                                    любительский хоккей и создать престижный дивизион с шикарным трофее и еще какой-то
+                                    тут текст который по сути ничего не значит, но делает некий вид этому прекрасному
+                                    блоку</div>
+                                <div class="go-news__modal-txt">Несколько лет назад мы решили популяризировать
+                                    любительский хоккей и создать престижный дивизион с шикарным трофее и еще какой-то
+                                    тут текст который по сути ничего не значит, но делает некий вид этому прекрасному
+                                    блоку</div>
+                                <div class="go-news__modal-image-block">
+                                    <div class="go-news__modal-image"><img src="/local/templates/new_ru/img/soc-item1.png"
+                                            alt="team-news-item"></div>
+                                    <div class="go-news__modal-image"><img src="/local/templates/new_ru/img/team-news-item1.png"
+                                            alt="team-news-item"></div>
+                                </div>
+                                <div class="go-news__modal-txt">Несколько лет назад мы решили популяризировать
+                                    любительский хоккей и создать престижный дивизион с шикарным трофее и еще какой-то
+                                    тут текст который по сути ничего не значит, но делает некий вид этому прекрасному
+                                    блоку</div>
+                                <div class="go-news__modal-txt">Несколько лет назад мы решили популяризировать
+                                    любительский хоккей и создать престижный дивизион с шикарным трофее и еще какой-то
+                                    тут текст который по сути ничего не значит, но делает некий вид этому прекрасному
+                                    блоку</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="go-news__btn-block">
+                    <div class="go-news__btn">Все новости</div>
+                </div>
+            </div>
+            <div class="social-content-block">
+                <div class="social-content-block__title-block">
+                    <div class="social-content-block__title">Instagram</div><img src="assets/97a518195dd6805c5623.png"
+                        alt="arrow">
+                </div>
+                <div class="social-content-block__content"><a class="social-content-block__item" href=""><img
+                            src="/local/templates/new_ru/img/soc-item1.png" alt="soc-item"></a><a
+                        class="social-content-block__item" href=""><img src="/local/templates/new_ru/img/soc-item1.png"
+                            alt="soc-item"></a><a class="social-content-block__item" href=""><img
+                            src="/local/templates/new_ru/img/soc-item1.png" alt="soc-item"></a><a
+                        class="social-content-block__item" href=""><img src="/local/templates/new_ru/img/soc-item1.png"
+                            alt="soc-item"></a></div>
+            </div>
+            <div class="social-content-block">
+                <div class="social-content-block__title-block">
+                    <div class="social-content-block__title">VK</div><img src="assets/97a518195dd6805c5623.png"
+                        alt="arrow">
+                </div>
+                <div class="social-content-block__content"><a class="social-content-block__item" href=""><img
+                            src="/local/templates/new_ru/img/soc-item1.png" alt="soc-item"></a><a
+                        class="social-content-block__item" href=""><img src="/local/templates/new_ru/img/soc-item1.png"
+                            alt="soc-item"></a><a class="social-content-block__item" href=""><img
+                            src="/local/templates/new_ru/img/soc-item1.png" alt="soc-item"></a><a
+                        class="social-content-block__item" href=""><img src="/local/templates/new_ru/img/soc-item1.png"
+                            alt="soc-item"></a></div>
+            </div>
+        </div>
+    </div>
