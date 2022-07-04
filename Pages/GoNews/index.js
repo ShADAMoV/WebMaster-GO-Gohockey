@@ -52,4 +52,17 @@ if (document.documentElement.clientWidth <= 768) {
     });
 }
 
+//Раскрытие и скрытие блока с новостями
+$('document').ready(function () {
+    $(".go-news__btn").on("click", function () {
+        if ($(".go-news__btn").text() == "Все новости") {
+            $(".go-news__news-items-block").addClass("max-height")
+            $(".go-news__btn").text("Свернуть")
+        } else {
+            $(".go-news__news-items-block").removeClass("max-height")
+            $(".go-news__btn").text("Все новости")
+        }
+    })
+})
+
 /////////////////////////////ЗАПОМНИ - #000528
