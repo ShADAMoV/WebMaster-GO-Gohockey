@@ -1,31 +1,3 @@
-@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap);
-
-* {
-    padding: 0;
-    margin: 0;
-    font-family: generalFont
-}
-
-body {
-    background-color: #000;
-    color: #fff;
-    overflow-x: hidden
-}
-
-pre {
-    color: #fff
-}
-
-a {
-    text-decoration: none;
-    color: #fff
-}
-
-a:hover {
-    text-decoration: none;
-    color: #fff
-}
-
 .go-news {
     width: 100%
 }
@@ -449,6 +421,19 @@ a:hover {
     max-width: 1360px
 }
 
+.go-news__news-items-block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    height: 700px;
+    content-visibility: auto
+}
+
 .championship-course {
     max-width: 1360px
 }
@@ -807,7 +792,11 @@ a:hover {
     display: none
 }
 
-@media(min-width: 1439px) {
+.max-height {
+    height: 100% !important
+}
+
+@media(min-width: 1440px) {
     .go-news__item:nth-child(3n) {
         margin-right: 0px
     }
@@ -816,10 +805,6 @@ a:hover {
 @media(max-width: 1439px) {
     .go-news__item:nth-child(2n) {
         margin-right: 0px
-    }
-
-    .go-news__item {
-        width: calc(50% - 10px)
     }
 }
 
@@ -863,11 +848,6 @@ a:hover {
         margin: 0 auto
     }
 
-    .go-news__item {
-        margin-right: 0px;
-        width: 100%
-    }
-
     .go-news__text {
         font-size: 28px;
         line-height: 39.2px;
@@ -895,6 +875,23 @@ a:hover {
         font-size: 28px;
         line-height: 39.2px;
         height: 35px
+    }
+}
+
+@media(max-width: 980px) {
+    .go-news__news-items-block {
+        width: 440px;
+        height: 1400px
+    }
+
+    .go-news__item {
+        margin-right: 0 !important
+    }
+
+    .go-news__news-items {
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center
     }
 }
 
@@ -1093,6 +1090,18 @@ a:hover {
     }
 }
 
+@media(max-width: 520px) {
+    .go-news__news-items-block {
+        width: 335px;
+        height: 1620px
+    }
+
+    .go-news__item {
+        width: 335px;
+        height: 250px
+    }
+}
+
 @media(max-width: 500px) {
     .results {
         -ms-flex-wrap: wrap;
@@ -1201,15 +1210,3 @@ a:hover {
         width: 100%
     }
 }
-
-@font-face {
-    font-family: generalFont;
-    src: url(assets/cea1e8e8a45b9be98eac.ttf) format("truetype")
-}
-
-@font-face {
-    font-family: boldGeneralFont;
-    src: url(assets/0139c8dd0c2e0ebbba4b.ttf) format("truetype")
-}
-
-/*# sourceMappingURL=main.91bc24e41b6003253085.css.map*/
