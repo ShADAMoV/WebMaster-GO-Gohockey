@@ -1,3 +1,31 @@
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap);
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: generalFont
+}
+
+body {
+    background-color: #000;
+    color: #fff;
+    overflow-x: hidden
+}
+
+pre {
+    color: #fff
+}
+
+a {
+    text-decoration: none;
+    color: #fff
+}
+
+a:hover {
+    text-decoration: none;
+    color: #fff
+}
+
 .go-news {
     width: 100%
 }
@@ -342,7 +370,7 @@
 .go-news__content {
     max-width: 1360px;
     margin: 0 auto;
-    padding: 80px 40px;
+    padding: 80px 40px 0px 40px
 }
 
 .go-news__news-items {
@@ -1042,7 +1070,7 @@
     }
 
     .go-news__content {
-        padding: 40px 20px
+        padding: 40px 20px 0px 20px
     }
 
     .go-news__modal {
@@ -1210,3 +1238,15 @@
         width: 100%
     }
 }
+
+@font-face {
+    font-family: generalFont;
+    src: url(assets/cea1e8e8a45b9be98eac.ttf) format("truetype")
+}
+
+@font-face {
+    font-family: boldGeneralFont;
+    src: url(assets/0139c8dd0c2e0ebbba4b.ttf) format("truetype")
+}
+
+/*# sourceMappingURL=main.c8cdc1765bb851042e53.css.map*/
