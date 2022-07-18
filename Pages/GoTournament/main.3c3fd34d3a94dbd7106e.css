@@ -356,7 +356,6 @@
 }
 
 .go-tournament__title-block {
-    max-width: 1360px;
     font-size: 42px;
     line-height: 52px;
     letter-spacing: .02em;
@@ -877,10 +876,6 @@
 
 .airOff {
     display: none
-}
-
-.go-tournament__swiper-block {
-    max-width: 1360px
 }
 
 .go-tournament__swiper {
