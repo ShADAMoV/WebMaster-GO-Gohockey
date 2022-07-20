@@ -542,8 +542,8 @@
 
 .gohockey-tournament__players-staff-person-number span {
     position: relative;
-    color: #000;
-    -webkit-text-stroke: .16em #000;
+    color: #020553;
+    -webkit-text-stroke: .16em #020553;
     -webkit-text-stroke-width: 10px;
     font-size: 42px;
     line-height: 42px;
@@ -553,7 +553,7 @@
 .gohockey-tournament__players-staff-person-number span::before {
     content: attr(data-text);
     position: absolute;
-    -webkit-text-stroke: .02em #000;
+    -webkit-text-stroke: .02em #FF4C01;
     -webkit-text-stroke-width: 1px;
     z-index: 2
 }
@@ -561,7 +561,7 @@
 .gohockey-tournament__players-staff-person-number span::after {
     content: attr(data-text);
     position: absolute;
-    -webkit-text-stroke: .02em #fff;
+    -webkit-text-stroke: .02em #FF4C01;
     -webkit-text-stroke-width: 4px;
     right: 0;
     z-index: 1
