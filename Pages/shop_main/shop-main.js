@@ -58,4 +58,9 @@ $('document').ready(function () {
             }
         ]
     });
+    
+    $(".shop__swiper-item-like").on('click', function() {
+        var childrens = $(this).children();
+        $(childrens[1]).toggleClass('hide')
+    })
 })
