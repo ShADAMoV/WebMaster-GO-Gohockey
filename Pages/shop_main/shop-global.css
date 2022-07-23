@@ -38,6 +38,11 @@ a:hover {
     display: none !important
 }
 
+.like-active {
+    position: absolute;
+    top: 0;
+}
+
 .scale {
     display: inline-block;
     overflow: hidden;
